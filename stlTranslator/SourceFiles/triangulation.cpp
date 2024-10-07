@@ -33,5 +33,6 @@ vector<Triangle> Triangulation::createTriangles(const string& data)
             indices.clear();
         }
     }
+
     return triangles;
 }
