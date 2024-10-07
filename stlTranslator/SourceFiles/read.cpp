@@ -10,13 +10,13 @@ Read::Read()
 }
 
 void Read::read() {
-    ifstream myFile("cube.stl");
+    ifstream myFile("sphere.stl");
 
     if (myFile.is_open()) {
         while (getline(myFile, line)) {
             if (line.find("vertex") != string::npos) {
                 int pos = line.find("vertex");
-                data += line.substr(pos + 8);
+                data += line.substr(pos + 7);
                 data += ' ';
             }
         }
