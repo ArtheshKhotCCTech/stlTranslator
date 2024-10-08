@@ -4,8 +4,6 @@
 #include<sstream>
 #include "triangle.h"
 
-using namespace std;
-
 class Triangulation {
 public:
     vector<double> uniqueVertices;
