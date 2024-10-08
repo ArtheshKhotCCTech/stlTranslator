@@ -11,3 +11,5 @@ void Write::writeFile(const std::string& filename, const std::vector<Triangle>& 
             << uniqueVertices[triangle.p1.x] << " " << uniqueVertices[triangle.p1.y] << " " << uniqueVertices[triangle.p1.z] << "\n"<<endl<<endl;
     }
 }
+
+
