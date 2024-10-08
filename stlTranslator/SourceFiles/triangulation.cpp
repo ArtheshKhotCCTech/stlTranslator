@@ -35,3 +35,6 @@ vector<Triangle> Triangulation::createTriangles(const string& data)
     }
     return triangles;
 }
+
+
+
