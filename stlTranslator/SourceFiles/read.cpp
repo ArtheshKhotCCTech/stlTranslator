@@ -5,9 +5,7 @@
 
 using namespace std;
 
-Read::Read()
-{
-}
+Read::Read(){}
 
 void Read::read() {
     ifstream myFile("sphere.stl");
@@ -27,9 +25,7 @@ void Read::read() {
     }
 }
 
-Read::~Read()
-{
-}
+Read::~Read(){}
 
 
 
