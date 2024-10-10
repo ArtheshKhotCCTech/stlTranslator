@@ -1,32 +1,27 @@
 #include "read.h"
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-
-using namespace std;
 
 Read::Read()
 {
 }
 
 void Read::read() {
-    ifstream infile("sphere.stl");
-    string line;
+    std::ifstream infile("cube.stl");
+    if (!infile.is_open()) {
+        std::cout << "File Not Found" << std::endl;
+    }
+    std::string line;
     while (getline(infile, line)) {
-        stringstream ss(line);
-        string word;
+        std::stringstream ss(line);
+        std::string word;
         while (ss >> word) {
             if (word == "vertex") {
-                string x, y, z;
+                std::string x, y, z;
                 ss >> x >> y >> z;
+                assert(!x.empty() && !y.empty() && !z.empty());
                 data += x + " " + y + " " + z + " ";
             }
         }
     }
 }
 
-Read::~Read()
-{
-
-}
+Read::~Read() {}

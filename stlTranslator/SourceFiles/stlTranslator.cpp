@@ -1,9 +1,6 @@
-#include "read.h"
-#include<fstream>
-#include "triangulation.h"
 #include "write.h"
-
-using namespace std;
+#include "read.h"
+#include "triangulation.h"
 
 int main() {
     Read reader;
@@ -12,7 +9,7 @@ int main() {
     Triangulation triangulation;
     triangulation.processString(reader.data);
 
-    vector<Triangle> triangles = triangulation.createTriangles(reader.data);
+    std::vector<Triangle> triangles = triangulation.createTriangles(reader.data);
 
     Write writer;
     writer.writeFile("output.dat", triangles, triangulation.uniqueVertices);

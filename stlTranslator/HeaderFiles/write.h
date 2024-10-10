@@ -1,10 +1,9 @@
 #pragma once
+#include "triangle.h"
 #include<fstream>
-#include<vector>
-#include<triangle.h>
 #include<iomanip>
-
-using namespace std;
+#include<iostream>
+#include<vector>
 
 class Write {
 public:

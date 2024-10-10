@@ -1,16 +1,17 @@
 #pragma once
-#include<vector>
-#include<unordered_map>
-#include<sstream>
 #include "triangle.h"
-
-using namespace std;
+#include<cassert>
+#include<iostream>
+#include<sstream>
+#include<stdexcept>
+#include<unordered_map>
+#include<vector>
 
 class Triangulation {
 public:
-    vector<double> uniqueVertices;
-    unordered_map<double, int> vertexIndexMap;  
+    std::vector<double> uniqueVertices;
+    std::unordered_map<double, int> vertexIndexMap;  
 
-    void processString(const string& data);
-    vector<Triangle> createTriangles(const string& data); 
+    void processString(const std::string& data);
+    std::vector<Triangle> createTriangles(const std::string& data); 
 };

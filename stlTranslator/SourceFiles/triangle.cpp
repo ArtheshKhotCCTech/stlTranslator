@@ -7,7 +7,19 @@ Triangle::Triangle(Point p1, Point p2, Point p3)
 	this->p3 = p3;
 }
 
-Triangle::~Triangle()
+Point Triangle::getPointP1()
 {
-
+	return p1;
 }
+
+Point Triangle::getPointP2()
+{
+	return p2;
+}
+
+Point Triangle::getPointP3()
+{
+	return p3;
+}
+
+Triangle::~Triangle() {}
