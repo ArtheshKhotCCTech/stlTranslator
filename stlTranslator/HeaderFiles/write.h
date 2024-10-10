@@ -2,6 +2,7 @@
 #include "triangle.h"
 #include<fstream>
 #include<iomanip>
+#include<iostream>
 #include<vector>
 
 class Write {

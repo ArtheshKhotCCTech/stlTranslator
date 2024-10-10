@@ -1,6 +1,9 @@
 #pragma once
 #include "triangle.h"
+#include<cassert>
+#include<iostream>
 #include<sstream>
+#include<stdexcept>
 #include<unordered_map>
 #include<vector>
 

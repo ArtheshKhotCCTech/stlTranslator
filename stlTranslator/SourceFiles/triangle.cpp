@@ -22,7 +22,4 @@ Point Triangle::getPointP3()
 	return p3;
 }
 
-Triangle::~Triangle()
-{
-
-}
+Triangle::~Triangle() {}

@@ -10,4 +10,5 @@ void Write::writeFile(const std::string& filename, const std::vector<Triangle>& 
             << uniqueVertices[triangle.getPointP3().getX()] << " " << uniqueVertices[triangle.getPointP3().getY()] << " " << uniqueVertices[triangle.getPointP3().getZ()] << "\n"
             << uniqueVertices[triangle.getPointP1().getX()] << " " << uniqueVertices[triangle.getPointP1().getY()] << " " << uniqueVertices[triangle.getPointP1().getZ()] << "\n" <<std::endl<<std::endl;
     }
+    std::cout << "Data file created !!!!" << std::endl;
 }

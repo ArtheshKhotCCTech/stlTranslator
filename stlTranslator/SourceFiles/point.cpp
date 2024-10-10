@@ -24,7 +24,4 @@ int Point::getZ()
 	return z;
 }
 
-Point::~Point()
-{
-
-}
+Point::~Point() {}
