@@ -2,12 +2,12 @@
 
 void Write::writeFile(const std::string& filename, const std::vector<Triangle>& triangles, const std::vector<double>& uniqueVertices)
 {
-    ofstream outfile(filename);
-    for (const auto& triangle : triangles) {
+    std::ofstream outfile(filename);
+    for (Triangle triangle : triangles) {
         outfile << std::fixed << std::setprecision(6)
-            << uniqueVertices[triangle.p1.x] << " " << uniqueVertices[triangle.p1.y] << " " << uniqueVertices[triangle.p1.z] << "\n"
-            << uniqueVertices[triangle.p2.x] << " " << uniqueVertices[triangle.p2.y] << " " << uniqueVertices[triangle.p2.z] << "\n"
-            << uniqueVertices[triangle.p3.x] << " " << uniqueVertices[triangle.p3.y] << " " << uniqueVertices[triangle.p3.z] << "\n"
-            << uniqueVertices[triangle.p1.x] << " " << uniqueVertices[triangle.p1.y] << " " << uniqueVertices[triangle.p1.z] << "\n"<<endl<<endl;
+            << uniqueVertices[triangle.getPointP1().getX()] << " " << uniqueVertices[triangle.getPointP1().getY()] << " " << uniqueVertices[triangle.getPointP1().getZ()] << "\n"
+            << uniqueVertices[triangle.getPointP2().getX()] << " " << uniqueVertices[triangle.getPointP2().getY()] << " " << uniqueVertices[triangle.getPointP2().getZ()] << "\n"
+            << uniqueVertices[triangle.getPointP3().getX()] << " " << uniqueVertices[triangle.getPointP3().getY()] << " " << uniqueVertices[triangle.getPointP3().getZ()] << "\n"
+            << uniqueVertices[triangle.getPointP1().getX()] << " " << uniqueVertices[triangle.getPointP1().getY()] << " " << uniqueVertices[triangle.getPointP1().getZ()] << "\n" <<std::endl<<std::endl;
     }
 }

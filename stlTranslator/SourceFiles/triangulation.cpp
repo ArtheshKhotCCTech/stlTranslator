@@ -1,8 +1,8 @@
 #include "triangulation.h"
 
-void Triangulation::processString(const string& data)
+void Triangulation::processString(const std::string& data)
 {
-    istringstream iss(data);
+    std::istringstream iss(data);
     double value;
     int currentIndex = 0;
 
@@ -15,11 +15,11 @@ void Triangulation::processString(const string& data)
     }
 }
 
-vector<Triangle> Triangulation::createTriangles(const string& data)
+std::vector<Triangle> Triangulation::createTriangles(const std::string& data)
 {
-    vector<Triangle> triangles;
-    istringstream iss(data);
-    vector<int> indices;
+    std::vector<Triangle> triangles;
+    std::istringstream iss(data);
+    std::vector<int> indices;
 
     double val;
     while (iss >> val) {

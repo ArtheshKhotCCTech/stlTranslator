@@ -1,16 +1,13 @@
 #pragma once
-
-#include<iostream>
-#include<string>
 #include<fstream>
 #include<iostream>
-
-using namespace std;
+#include<sstream>
+#include<string>
 
 class Read {
 public:
     Read();
-    string line, data;
+    std::string line, data;
     void read();
     ~Read();
 };
