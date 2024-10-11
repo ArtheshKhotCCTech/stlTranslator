@@ -8,10 +8,13 @@
 #include<vector>
 
 class Triangulation {
-public:
     std::vector<double> uniqueVertices;
-    std::unordered_map<double, int> vertexIndexMap;  
+    std::unordered_map<double, int> vertexIndexMap;
+public: 
 
+    std::vector<double> getUniqueVertices() {
+        return uniqueVertices;
+    }
     void processString(const std::string& data);
     std::vector<Triangle> createTriangles(const std::string& data); 
 };

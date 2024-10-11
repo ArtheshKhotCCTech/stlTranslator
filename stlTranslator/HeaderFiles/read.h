@@ -7,9 +7,9 @@
 #include<string>
 
 class Read {
+    std::string line, data;
 public:
     Read();
-    std::string line, data;
-    void read();
+    std::string read();
     ~Read();
 };

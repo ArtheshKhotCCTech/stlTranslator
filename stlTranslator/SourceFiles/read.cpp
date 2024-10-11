@@ -4,7 +4,7 @@ Read::Read()
 {
 }
 
-void Read::read() {
+std::string Read::read() {
     std::ifstream infile("cube.stl");
     if (!infile.is_open()) {
         std::cout << "File Not Found" << std::endl;
@@ -22,6 +22,7 @@ void Read::read() {
             }
         }
     }
+    return data;
 }
 
 Read::~Read() {}
