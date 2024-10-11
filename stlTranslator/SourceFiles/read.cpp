@@ -5,10 +5,12 @@ Read::Read()
 }
 
 std::string Read::read() {
-    std::ifstream infile("cube.stl");
-    if (!infile.is_open()) {
-        std::cout << "File Not Found" << std::endl;
-    }
+    std::string fileName;
+    std::cout << "Enter the name of file without .stl part" << std::endl;
+    std::cin >> fileName;
+    fileName += ".stl";
+    std::ifstream infile(fileName);
+    assert(infile.is_open());
     std::string line;
     while (getline(infile, line)) {
         std::stringstream ss(line);

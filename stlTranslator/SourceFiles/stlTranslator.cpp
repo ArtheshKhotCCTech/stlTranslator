@@ -9,11 +9,10 @@ int main() {
 
     Triangulation triangulation;
     triangulation.processString(input);
-
-    std::vector<Triangle> triangles = triangulation.createTriangles(input);
+    triangulation.createTriangles(input);
 
     Write writer;
-    writer.writeFile("output.dat", triangles, triangulation.getUniqueVertices());
+    writer.writeFile("output.dat", triangulation.triangulizationDataStructure(), triangulation.getUniqueVertices());
 
     return 0;
 }
