@@ -6,6 +6,7 @@ Read::Read()
 
 std::string Read::read() {
     std::string fileName;
+    fileName += "TestCases/";
     std::cout << "Enter the name of file without .stl part" << std::endl;
     std::cin >> fileName;
     fileName += ".stl";
