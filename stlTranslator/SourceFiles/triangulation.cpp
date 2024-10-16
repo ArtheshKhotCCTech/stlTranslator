@@ -1,5 +1,15 @@
 #include "triangulation.h"
 
+std::vector<double> Triangulation::getUniqueVertices()
+{
+    return uniqueVertices;
+}
+
+std::vector<Triangle> Triangulation::triangulizationDataStructure()
+{
+    return triangles;
+}
+
 void Triangulation::processString(const std::string& data) {
     std::istringstream iss(data);
     double value;
@@ -23,8 +33,7 @@ void Triangulation::processString(const std::string& data) {
     }
 }
 
-std::vector<Triangle> Triangulation::createTriangles(const std::string& data) {
-    std::vector<Triangle> triangles;
+void Triangulation::createTriangles(const std::string& data) {
     std::istringstream iss(data);
     std::vector<int> indices;
 
@@ -57,6 +66,4 @@ std::vector<Triangle> Triangulation::createTriangles(const std::string& data) {
     }
 
     assert(indices.empty());
-
-    return triangles;
 }
