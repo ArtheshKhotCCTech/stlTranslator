@@ -4,7 +4,7 @@
 #include <string>
 
 int main() {
-    Read reader;
+    Reader reader;
     std::string input = reader.read();
 
     Triangulation triangulation;

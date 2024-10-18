@@ -6,10 +6,10 @@
 #include<sstream>
 #include<string>
 
-class Read {
+class Reader {
     std::string line, data;
 public:
-    Read();
+    Reader();
     std::string read();
-    ~Read();
+    ~Reader();
 };

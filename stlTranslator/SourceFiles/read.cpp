@@ -1,16 +1,11 @@
 #include "read.h"
 
-Read::Read()
+Reader::Reader()
 {
 }
 
-std::string Read::read() {
-    std::string fileName;
-    fileName += "TestCases/";
-    std::cout << "Enter the name of file without .stl part" << std::endl;
-    std::cin >> fileName;
-    fileName += ".stl";
-    std::ifstream infile(fileName);
+std::string Reader::read() {
+    std::ifstream infile("Testcases/cube.stl");
     assert(infile.is_open());
     std::string line;
     while (getline(infile, line)) {
@@ -28,4 +23,4 @@ std::string Read::read() {
     return data;
 }
 
-Read::~Read() {}
+Reader::~Reader() {}
