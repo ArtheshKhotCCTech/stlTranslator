@@ -1,4 +1,9 @@
 #include "read.h"
+#include <cassert>
+#include<fstream>
+#include<iostream>
+#include<stdexcept>
+#include<sstream>
 
 Reader::Reader()
 {

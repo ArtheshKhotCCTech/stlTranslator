@@ -1,4 +1,8 @@
 #include "triangulation.h"
+#include<cassert>
+#include<iostream>
+#include<sstream>
+#include<stdexcept>
 
 std::vector<double> Triangulation::getUniqueVertices()
 {
