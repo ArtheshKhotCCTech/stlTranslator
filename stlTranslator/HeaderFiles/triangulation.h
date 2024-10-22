@@ -6,12 +6,12 @@
 
 class Triangulation {
     std::vector<double> uniqueVertices;
-    std::unordered_map<double, int> vertexIndexMap;
     std::vector<Triangle> triangles;
 public: 
-
+    void setUniqueVertices(std::vector<double>);
+    void setDataStructure(std::vector<Triangle>);
     std::vector<double> getUniqueVertices();
     std::vector<Triangle> triangulizationDataStructure();
-    void processString(const std::string& data);
-    void createTriangles(const std::string& data); 
+    /*void processString(const std::string& data);
+    void createTriangles(const std::string& data); */
 };

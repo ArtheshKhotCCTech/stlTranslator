@@ -19,19 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SourceFiles\point.cpp" />
-    <ClCompile Include="SourceFiles\read.cpp" />
+    <ClCompile Include="SourceFiles\Point.cpp" />
+    <ClCompile Include="SourceFiles\ReaderBase.cpp" />
+    <ClCompile Include="SourceFiles\STLReader.cpp" />
     <ClCompile Include="SourceFiles\stlTranslator.cpp" />
-    <ClCompile Include="SourceFiles\triangle.cpp" />
-    <ClCompile Include="SourceFiles\triangulation.cpp" />
-    <ClCompile Include="SourceFiles\write.cpp" />
+    <ClCompile Include="SourceFiles\Translator.cpp" />
+    <ClCompile Include="SourceFiles\Triangle.cpp" />
+    <ClCompile Include="SourceFiles\Triangulation.cpp" />
+    <ClCompile Include="SourceFiles\Write.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeaderFiles\point.h" />
-    <ClInclude Include="HeaderFiles\read.h" />
-    <ClInclude Include="HeaderFiles\triangle.h" />
-    <ClInclude Include="HeaderFiles\triangulation.h" />
-    <ClInclude Include="HeaderFiles\write.h" />
+    <ClInclude Include="HeaderFiles\Point.h" />
+    <ClInclude Include="HeaderFiles\ReaderBase.h" />
+    <ClInclude Include="HeaderFiles\STLReader.h" />
+    <ClInclude Include="HeaderFiles\Translator.h" />
+    <ClInclude Include="HeaderFiles\Triangle.h" />
+    <ClInclude Include="HeaderFiles\Triangulation.h" />
+    <ClInclude Include="HeaderFiles\Write.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

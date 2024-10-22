@@ -1,18 +1,8 @@
-#include "write.h"
-#include "read.h"
-#include "triangulation.h"
-#include <string>
+#include"Translator.h"
 
 int main() {
-    Reader reader;
-    std::string input = reader.read();
-
-    Triangulation triangulation;
-    triangulation.processString(input);
-    triangulation.createTriangles(input);
-
-    Write writer;
-    writer.writeFile("output.dat", triangulation.triangulizationDataStructure(), triangulation.getUniqueVertices());
+    Translator translate;
+    translate.translateSTLtoDAT("Testcases/sphere.stl", "output.dat");
 
     return 0;
 }

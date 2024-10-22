@@ -1,10 +1,13 @@
 #pragma once
 
 class Point {
-	int x, y, z;
+	int x = 0;
+	int y = 0;
+	int z = 0;
 
 public:
-	Point(int x=0,int y=0,int z=0);
+	Point();
+	void setPoints(int,int,int);
 	int getX();
 	int getY();
 	int getZ();

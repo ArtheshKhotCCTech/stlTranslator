@@ -18,36 +18,48 @@
     <ClCompile Include="SourceFiles\stlTranslator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SourceFiles\point.cpp">
+    <ClCompile Include="SourceFiles\Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SourceFiles\triangle.cpp">
+    <ClCompile Include="SourceFiles\Triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SourceFiles\triangulation.cpp">
+    <ClCompile Include="SourceFiles\Triangulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SourceFiles\read.cpp">
+    <ClCompile Include="SourceFiles\STLReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SourceFiles\write.cpp">
+    <ClCompile Include="SourceFiles\Write.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Translator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\ReaderBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeaderFiles\point.h">
+    <ClInclude Include="HeaderFiles\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeaderFiles\read.h">
+    <ClInclude Include="HeaderFiles\STLReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeaderFiles\triangle.h">
+    <ClInclude Include="HeaderFiles\Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeaderFiles\triangulation.h">
+    <ClInclude Include="HeaderFiles\Triangulation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeaderFiles\write.h">
+    <ClInclude Include="HeaderFiles\Write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Translator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\ReaderBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

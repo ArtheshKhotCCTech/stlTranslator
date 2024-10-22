@@ -2,11 +2,15 @@
 
 
 
-Point::Point(int x, int y, int z)
+Point::Point()
 {
-	this->x = x;
-	this->y = y;
-	this->z = z;
+}
+
+void Point::setPoints(int x_, int y_, int z_)
+{
+	x = x_;
+	y = y_;
+	z = z_;
 }
 
 int Point::getX()
