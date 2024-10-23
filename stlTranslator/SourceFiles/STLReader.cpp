@@ -32,7 +32,6 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
     int arrIndices[3];
     int index = 0;
     int count = 0;
-
     Point p1;
     Point p2;
     Point p3;
