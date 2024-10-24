@@ -12,7 +12,7 @@ void Write::writeFile(const std::string& filename, const std::vector<Triangle>& 
             << uniqueVertices[triangle.getPointP2().getX()] << " " << uniqueVertices[triangle.getPointP2().getY()] << " " << uniqueVertices[triangle.getPointP2().getZ()] << "\n"
             << uniqueVertices[triangle.getPointP3().getX()] << " " << uniqueVertices[triangle.getPointP3().getY()] << " " << uniqueVertices[triangle.getPointP3().getZ()] << "\n"
             << uniqueVertices[triangle.getPointP1().getX()] << " " << uniqueVertices[triangle.getPointP1().getY()] << " " << uniqueVertices[triangle.getPointP1().getZ()] << "\n" 
-            << std::endl<<std::endl;    // Used 2 endl for separating two triangles while plotting in GNUPlot.
+            << std::endl << std::endl ;    // Used 2 endl for separating two triangles while plotting in GNUPlot.
     }
     std::cout << "Data file created !" << std::endl;
 }
