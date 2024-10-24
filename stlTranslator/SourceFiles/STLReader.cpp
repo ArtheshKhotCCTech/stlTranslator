@@ -51,7 +51,7 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
                         if (uniqueMap.find(arrNums[i]) == uniqueMap.end())
                         {
                             uniqueMap[arrNums[i]] = index;
-                            triangulation.setUniqueVertices(arrNums[i]);
+                            triangulation.setUniqueVertices(arrNums[i]); //push unique values
                             arrIndices[i] = index;
                             index++;
                         }
@@ -70,7 +70,7 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
                         break;
                     case 2:
                         p3.setPoints(arrIndices[0], arrIndices[1], arrIndices[2]);
-                        triangulation.setDataStructure(Triangle(p1, p2, p3));
+                        triangulation.setDataStructure(Triangle(p1, p2, p3)); //push triangles
                         break;
                     }
                     count++;
