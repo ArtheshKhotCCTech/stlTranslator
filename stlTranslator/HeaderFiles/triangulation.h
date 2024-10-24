@@ -5,8 +5,8 @@
 
 class Triangulation 
 {
-    std::vector<double> uniqueVertices;
     std::vector<Triangle> triangles;
+    std::vector<double> uniqueVertices;
 public: 
     void setUniqueVertices(double value);
     void setDataStructure(Triangle triangle);
