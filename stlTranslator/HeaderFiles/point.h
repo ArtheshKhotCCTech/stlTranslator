@@ -1,15 +1,18 @@
 #pragma once
 
-class Point {
+class Point 
+{
 	int x = 0;
 	int y = 0;
 	int z = 0;
 
 public:
 	Point();
+        ~Point();
+
 	void setPoints(int,int,int);
 	int getX();
 	int getY();
 	int getZ();
-	~Point();
+	
 };
