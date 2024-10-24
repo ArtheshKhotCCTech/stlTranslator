@@ -1,5 +1,5 @@
 #pragma once
-#include "triangle.h"
+#include "Triangle.h"
 #include<string>
 #include<vector>
 

@@ -1,8 +1,14 @@
 #include "DATwriter.h"
+#include<fstream>
+#include<iomanip>
 
 void DATWriter::fileWriter(const std::string& filename, const std::vector<Triangle>& triangles, const std::vector<double>& uniqueVertices)
 {
     std::ofstream outfile(filename);
+    std::ifstream infile(filename);
+    if (infile.is_open()) {
+        return;
+    }
     for (Triangle triangle : triangles) 
     {
         outfile << std::fixed << std::setprecision(6)

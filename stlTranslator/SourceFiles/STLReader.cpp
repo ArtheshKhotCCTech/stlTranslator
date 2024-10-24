@@ -23,12 +23,10 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
     double x;
     double y;
     double z;
-    std::vector<Triangle> triangles;
-    std::vector<double> uniqueValues;
     std::map<double, int, comparer> uniqueMap;
-    double arrNums[3];
-    int arrIndices[3];
-    int index = 0;
+    double arrNums[3]; // To store 3 coordinates as double
+    int arrIndices[3]; // To store indices of unique double values
+    int index = 0; 
     int count = 0;
     Point p1;
     Point p2;
@@ -72,7 +70,6 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
                         break;
                     case 2:
                         p3.setPoints(arrIndices[0], arrIndices[1], arrIndices[2]);
-                        triangles.push_back(Triangle(p1, p2, p3));
                         triangulation.setDataStructure(Triangle(p1, p2, p3));
                         break;
                     }
