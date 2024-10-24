@@ -1,7 +1,6 @@
 #pragma once
 #include "triangle.h"
 #include<string>
-#include<unordered_map>
 #include<vector>
 
 class Triangulation 
