@@ -3,7 +3,8 @@
 #include "Triangulation.h"
 #include "Reader.h"
 
-class STLReader : public Reader{
+class STLReader : public Reader
+{
 public:
     STLReader();
     ~STLReader();
