@@ -1,8 +1,6 @@
 #pragma once
 #include "triangle.h"
 #include "FileWriter.h"
-#include<fstream>
-#include<iomanip>
 #include<iostream>
 #include<vector>
 
