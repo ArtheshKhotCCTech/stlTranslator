@@ -4,7 +4,8 @@
 #include<unordered_map>
 #include<vector>
 
-class Triangulation {
+class Triangulation 
+{
     std::vector<double> uniqueVertices;
     std::vector<Triangle> triangles;
 public: 
