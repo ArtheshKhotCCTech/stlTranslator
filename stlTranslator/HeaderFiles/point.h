@@ -7,9 +7,9 @@ class Point {
 
 public:
 	Point();
+	~Point();
 	void setPoints(int,int,int);
 	int getX();
 	int getY();
 	int getZ();
-	~Point();
 };

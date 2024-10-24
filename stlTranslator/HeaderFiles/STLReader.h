@@ -1,13 +1,9 @@
 #pragma once
 #include<string>
 #include "Triangulation.h"
-#include "ReaderBase.h"
+#include "Reader.h"
 
-struct comparer {
-    bool operator()(double a, double b) const;
-};
-
-class STLReader : public ReaderBase{
+class STLReader : public Reader{
 public:
     STLReader();
     ~STLReader();

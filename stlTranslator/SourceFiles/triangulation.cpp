@@ -4,14 +4,14 @@
 #include<sstream>
 #include<stdexcept>
 
-void Triangulation::setUniqueVertices(std::vector<double> uniqueVertices_)
+void Triangulation::setUniqueVertices(double value)
 {
-    uniqueVertices = uniqueVertices_;
+    uniqueVertices.push_back(value);
 }
 
-void Triangulation::setDataStructure(std::vector<Triangle> triangles_)
+void Triangulation::setDataStructure(Triangle triangle)
 {
-    triangles = triangles_;
+    triangles.push_back(triangle);
 }
 
 std::vector<double> Triangulation::getUniqueVertices()

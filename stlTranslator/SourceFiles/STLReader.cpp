@@ -1,5 +1,6 @@
 #include "STLReader.h"
 #include "Point.h"
+#include "Reader.h"
 #include <cassert>
 #include<fstream>
 #include<iostream>
@@ -9,14 +10,11 @@
 #include<cmath>
 #include<map>
 
-#define TOLERANCE 0.0000001
-
-bool comparer::operator()(double a, double b) const
+STLReader::STLReader()
 {
-    return fabs(a - b) > TOLERANCE ? a < b : false;
 }
 
-STLReader::STLReader()
+STLReader::~STLReader()
 {
 }
 
@@ -55,7 +53,7 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
                         if (uniqueMap.find(arrNums[i]) == uniqueMap.end())
                         {
                             uniqueMap[arrNums[i]] = index;
-                            uniqueValues.push_back(arrNums[i]);
+                            triangulation.setUniqueVertices(arrNums[i]);
                             arrIndices[i] = index;
                             index++;
                         }
@@ -75,21 +73,16 @@ void STLReader::read(const std::string& fileName,Triangulation& triangulation)
                     case 2:
                         p3.setPoints(arrIndices[0], arrIndices[1], arrIndices[2]);
                         triangles.push_back(Triangle(p1, p2, p3));
+                        triangulation.setDataStructure(Triangle(p1, p2, p3));
                         break;
                     }
                     count++;
                 }
             }
         }
-        triangulation.setUniqueVertices(uniqueValues);
-        triangulation.setDataStructure(triangles);
     }
     else
     {
         std::cout << "Could not open the file" << std::endl;
     }
-}
-
-STLReader::~STLReader() 
-{
 }

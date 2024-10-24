@@ -1,7 +1,7 @@
 #include "Translator.h"
 #include "STLReader.h"
 #include "Triangulation.h"
-#include "Write.h"
+#include "DATWriter.h"
 #include <iostream>
 
 void Translator::translateSTLtoDAT(const std::string& inputFilePath, const std::string& outputFilePath)
@@ -9,6 +9,6 @@ void Translator::translateSTLtoDAT(const std::string& inputFilePath, const std::
     Triangulation tri;
     STLReader reader;
     reader.read(inputFilePath, tri);
-    Write writer;
-    writer.writeFile(outputFilePath, tri.triangulizationDataStructure(), tri.getUniqueVertices());
+    DATWriter writer;
+    writer.fileWriter(outputFilePath, tri.triangulizationDataStructure(), tri.getUniqueVertices());
 }

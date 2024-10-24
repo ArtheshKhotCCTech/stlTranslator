@@ -6,6 +6,10 @@ Point::Point()
 {
 }
 
+Point::~Point() 
+{
+}
+
 void Point::setPoints(int x_, int y_, int z_)
 {
 	x = x_;
@@ -27,5 +31,3 @@ int Point::getZ()
 {
 	return z;
 }
-
-Point::~Point() {}

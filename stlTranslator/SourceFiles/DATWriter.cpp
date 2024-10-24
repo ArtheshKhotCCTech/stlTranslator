@@ -1,6 +1,6 @@
-#include "write.h"
+#include "DATwriter.h"
 
-void Write::writeFile(const std::string& filename, const std::vector<Triangle>& triangles, const std::vector<double>& uniqueVertices)
+void DATWriter::fileWriter(const std::string& filename, const std::vector<Triangle>& triangles, const std::vector<double>& uniqueVertices)
 {
     std::ofstream outfile(filename);
     for (Triangle triangle : triangles) {

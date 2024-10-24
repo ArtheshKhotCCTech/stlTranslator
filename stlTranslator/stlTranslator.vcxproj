@@ -19,23 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HeaderFiles\FileWriter.h" />
+    <ClInclude Include="HeaderFiles\Point.h" />
+    <ClInclude Include="HeaderFiles\Reader.h" />
+    <ClInclude Include="HeaderFiles\STLReader.h" />
+    <ClInclude Include="HeaderFiles\Translator.h" />
+    <ClInclude Include="HeaderFiles\Triangle.h" />
+    <ClInclude Include="HeaderFiles\Triangulation.h" />
+    <ClInclude Include="HeaderFiles\DATWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\FileWriter.cpp" />
     <ClCompile Include="SourceFiles\Point.cpp" />
-    <ClCompile Include="SourceFiles\ReaderBase.cpp" />
+    <ClCompile Include="SourceFiles\Reader.cpp" />
     <ClCompile Include="SourceFiles\STLReader.cpp" />
     <ClCompile Include="SourceFiles\stlTranslator.cpp" />
     <ClCompile Include="SourceFiles\Translator.cpp" />
     <ClCompile Include="SourceFiles\Triangle.cpp" />
     <ClCompile Include="SourceFiles\Triangulation.cpp" />
-    <ClCompile Include="SourceFiles\Write.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HeaderFiles\Point.h" />
-    <ClInclude Include="HeaderFiles\ReaderBase.h" />
-    <ClInclude Include="HeaderFiles\STLReader.h" />
-    <ClInclude Include="HeaderFiles\Translator.h" />
-    <ClInclude Include="HeaderFiles\Triangle.h" />
-    <ClInclude Include="HeaderFiles\Triangulation.h" />
-    <ClInclude Include="HeaderFiles\Write.h" />
+    <ClCompile Include="SourceFiles\DATWriter.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
